@@ -30,7 +30,10 @@
       <td><?= $usuario['id'] ?></td>
       <td><?= htmlspecialchars($usuario['nombre']) ?></td>
       <td><?= htmlspecialchars($usuario['email']) ?></td>
-      <td><a href="#">Editar</a> | <a href="#">Eliminar</a></td>
+      <td>
+       
+        <a href="editar.php?id=<?php echo $usuario['id']; ?>">Editar</a> |  <a href="eliminar.php?id=<?php echo $usuario['id']; ?>">Eliminar</a>
+      </td>
     </tr>
     <?php endforeach; ?>
 
